@@ -1,3 +1,5 @@
+import "@babylonjs/loaders";
+
 import {Scene} from "@babylonjs/core/scene";
 import {HemisphericLight} from "@babylonjs/core/Lights/hemisphericLight";
 import {UniversalCamera} from "@babylonjs/core/Cameras/universalCamera";
