@@ -1,0 +1,25 @@
+{
+  "name": "touchpad_bug",
+  "version": "0.0.1",
+  "scripts": {
+    "test": "jest",
+    "build:clean": "rimraf build/*",
+    "build:src": "parcel build ./src/index.html --target browser --no-source-maps --public-url ./ --bundle-node-modules --out-dir ./build",
+    "build:dirtyRelease": "npm-run-all build:src",
+    "build:release": "npm-run-all build:clean build:src"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.5",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/preset-typescript": "^7.10.4",
+    "@babylonjs/inspector": "^4.1.0",
+    "@types/node": "^14.0.23",
+    "npm-run-all": "^4.1.5",
+    "parcel-bundler": "^1.12.4",
+    "typescript": "^3.9.6"
+  },
+  "dependencies": {
+    "@babylonjs/core": "^4.1.0",
+    "@babylonjs/gui": "^4.1.0"
+  }
+}
